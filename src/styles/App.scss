@@ -1,0 +1,40 @@
+@import url('./reset.scss');
+
+@font-face {
+    font-family: 'Mosium';
+    src: url('../fonts/MuseoSansCyrl300.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Mosium';
+    src: url('../fonts/MuseoSansCyrl700.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Mosium';
+    src: url('../fonts/MuseoSansCyrl100.ttf');
+    font-weight: 100;
+    font-style: normal;
+}
+
+* {
+    h3, h2, p, li {
+        font-family: 'Mosium';
+        font-weight: 300;
+    }
+    h1 {
+        font-family: 'Mosium';
+        font-weight: 700;
+    }
+}
+
+
+body {
+    background-image: url('../images/background2.png'), url('../images/background1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}

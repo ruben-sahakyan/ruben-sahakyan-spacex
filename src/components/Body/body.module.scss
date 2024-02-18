@@ -1,0 +1,176 @@
+@import "../../styles/variables.scss";
+
+.body {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    .body_container {
+        width: 1190px;
+        height: 500px;
+        padding: 0px 10px;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        .title_section {
+            width: 440px;
+            height: 100px;
+            margin-top: 150px;
+            color: #ffffff;
+            background-image: -webkit-linear-gradient(0deg, #ffffff 30%, #b50000 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            .title {
+                background-image: -webkit-linear-gradient(0deg, #ffffff 30%, #b50000 100%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                h1 {
+                    font-size: 54px;
+                    color: white;
+                }
+            }
+            h3 {
+                font-size: 23px;
+                color: white;
+            }
+        }
+        .btn_section {
+            position: relative;
+            width: 184px;
+            height: 40px;
+            margin-top: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            .body_button {
+                z-index: 2;
+                -webkit-text-fill-color: #ffffff;
+                background: none;
+                width: 180px;
+                height: 35px;
+                border: 1px solid $border_color;
+                background-color: rgb(27, 27, 27);
+                background-color: $button_background_color;
+                transition: all ease-in-out .2s;
+                box-shadow: 1px 1px 6px 2px rgba(9, 51, 204, 0.474);
+                cursor: pointer;
+                &:hover {
+                    box-shadow: 0px 0px 10px 0px rgba(9, 51, 204, 0.312);
+                }
+            }   
+            .body_btn_corner {
+                position: absolute;
+                color: rgba(211, 211, 211, 0.911);
+                font-size: 15px;
+            }
+            #body_btn_bottom_left {
+                z-index: 2;
+                top: 25px;
+                left: -1px;
+                rotate: 90deg;
+            }
+            #body_btn_top_right {
+                z-index: 2;
+                top: -1px;
+                left: 170px;
+                rotate: -90deg;
+            }
+        }
+        .benefits {
+            width: 380px;
+            height: 380px;
+            margin-top: 80px;
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            .benefit {
+                width: 185px;
+                height: 185px;
+                cursor: pointer;
+                color: rgba(255, 255, 255, 0.91);
+                text-align: center;
+                background: rgb(162,162,162);
+                transition: all ease-in-out .2s;
+                border: 1px solid rgba(148, 148, 148, 0.151);
+                &:hover {
+                    border: 1px solid $border_color;
+                }
+                .first_text {
+                    margin-top: 38px;
+                }
+                h2 {
+                    font-size: 60px;
+                    margin-top: 15px;
+                }
+                .second_text {
+                    margin-top: 0px;
+                }
+            }
+            #benefit_first {
+                background: linear-gradient(-45deg, rgba(227, 227, 227, 0.093) 10%, rgba(0, 0, 0, 0) 50%);
+                &:hover {
+                    background: linear-gradient(-45deg, rgba(227, 227, 227, 0.082) 10%, rgba(0, 0, 0, 0.153) 90%);
+                }
+            }
+            #benefit_second {
+                background: linear-gradient(45deg, rgb(227, 227, 227, 0.093) 10%, rgba(0, 0, 0, 0) 50%);
+                &:hover {
+                    background: linear-gradient(45deg, rgba(227, 227, 227, 0.082) 10%, rgba(0, 0, 0, 0.153) 90%);
+                }
+            }
+            #benefit_third {
+                background: linear-gradient(-125deg, rgb(227, 227, 227, 0.093) 10%, rgba(0, 0, 0, 0) 50%);
+                &:hover {
+                    background: linear-gradient(-125deg, rgba(227, 227, 227, 0.082) 10%, rgba(0, 0, 0, 0.153) 90%);
+                }
+            }
+            #benefit_fourth {
+                background: linear-gradient(125deg, rgb(227, 227, 227, 0.093) 10%, rgba(0, 0, 0, 0) 50%);
+                &:hover {
+                    background: linear-gradient(125deg, rgba(227, 227, 227, 0.082) 10%, rgba(0, 0, 0, 0.153) 90%);
+                }
+            }
+        }
+        @include bodypoint(md) {
+            display: block;
+            .title_section {
+                margin-top: 250px;
+                margin-left: calc(50% - 186px);
+                width: 372px;
+                .title {
+                    background-image: -webkit-linear-gradient(45deg, #4f0000 10%, #ffffff 100%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    h1 {
+                        text-align: center;
+                        font-size: 45px;
+                    }
+                }
+                h3 {
+                    background-image: -webkit-linear-gradient(45deg, #be0505 10%, #ffffff 70%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    text-align: center;
+                    font-size: 18px;
+                }
+            }
+            .btn_section {
+                margin: 0px;
+                margin-top: 30px;
+                margin-left: calc(50% - 94px);
+            }
+            .benefits {
+                margin: 0px;
+                margin-top: 100px;
+                margin-left: calc(50% - 190px);
+            }
+        }
+    }
+}

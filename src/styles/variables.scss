@@ -1,0 +1,19 @@
+@mixin breakpoint($point) {
+    @if $point == md {
+        @media (max-width: 936px) {
+            @content;
+        }
+    }
+}
+
+@mixin bodypoint($point) {
+    @if $point == md {
+        @media (max-width: 860px) {
+            @content
+        }
+    }
+}
+
+$border_color: #9893932b;
+$header_background_color: #150a012b;
+$button_background_color: rgba(22,21,29,0.5019607843137255);
